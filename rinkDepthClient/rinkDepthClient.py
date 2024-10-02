@@ -24,3 +24,4 @@ with socket(AF_INET, SOCK_STREAM) as sock:
 			if not data: break
 			conn.sendall(data)
 conn.close()
+sock.close()
