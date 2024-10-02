@@ -21,8 +21,6 @@ with socket(AF_INET, SOCK_STREAM) as sock:
 		while True:
 			data = conn.recv(1024)
 			print(data.decode())
-			print("\n\nnext:\n\n")
-			print(data)
 			if not data: break
 			conn.sendall(data)
 conn.close()
